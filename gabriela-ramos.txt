@@ -1,2 +1,4 @@
 1) Empieza Pepito
+2) Empieza Juanita
+3) Termina Juanita
 4) Termina Pepito
