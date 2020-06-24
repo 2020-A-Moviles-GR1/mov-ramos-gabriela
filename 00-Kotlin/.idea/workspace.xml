@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -92,6 +92,12 @@
       <option name="presentableId" value="Default" />
       <updated>1591880239265</updated>
       <workItem from="1591880242015" duration="2643000" />
+      <workItem from="1592539399280" duration="23000" />
+      <workItem from="1592539453838" duration="1664000" />
+      <workItem from="1592949692260" duration="6131000" />
+      <workItem from="1593022305023" duration="2243000" />
+      <workItem from="1593028832756" duration="215000" />
+      <workItem from="1593029072043" duration="10000" />
     </task>
     <servers />
   </component>
@@ -111,30 +117,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591880691708">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593028715384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591880691708" />
-    <state width="1342" height="188" key="GridCell.Tab.0.bottom" timestamp="1591891439495">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593028715384" />
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593028714240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591891439495" />
-    <state width="1342" height="188" key="GridCell.Tab.0.center" timestamp="1591891439495">
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1593028714240" />
+    <state width="1342" height="188" key="GridCell.Tab.0.bottom" timestamp="1593028718879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591891439495" />
-    <state width="1342" height="188" key="GridCell.Tab.0.left" timestamp="1591891439495">
+    <state width="1342" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593028718879" />
+    <state width="1342" height="188" key="GridCell.Tab.0.center" timestamp="1593028718879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591891439495" />
-    <state width="1342" height="188" key="GridCell.Tab.0.right" timestamp="1591891439495">
+    <state width="1342" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593028718879" />
+    <state width="1342" height="188" key="GridCell.Tab.0.left" timestamp="1593028718879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591891439495" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1591880511025">
+    <state width="1342" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593028718879" />
+    <state width="1342" height="188" key="GridCell.Tab.0.right" timestamp="1593028718879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591880511025" />
+    <state width="1342" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593028718879" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1592539535595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592539535595" />
+    <state x="209" y="14" key="new project wizard" timestamp="1592539418712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="14" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592539418712" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1591880451238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
