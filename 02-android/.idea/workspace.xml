@@ -5,6 +5,11 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Activity" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="09253f76-b5a9-4f53-935e-65870ff7b022" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="f6roj76h5ptgmzpz" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -120,22 +125,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1593969069566" />
-    <state width="745" height="210" key="GridCell.Tab.0.bottom" timestamp="1593986177947">
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom" timestamp="1594008194726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593986177947" />
-    <state width="745" height="210" key="GridCell.Tab.0.center" timestamp="1593986177947">
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594008194726" />
+    <state width="1491" height="210" key="GridCell.Tab.0.center" timestamp="1594008194726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593986177947" />
-    <state width="745" height="210" key="GridCell.Tab.0.left" timestamp="1593986177946">
+    <state width="1491" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594008194726" />
+    <state width="1491" height="210" key="GridCell.Tab.0.left" timestamp="1594008194726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593986177946" />
-    <state width="745" height="210" key="GridCell.Tab.0.right" timestamp="1593986177947">
+    <state width="1491" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594008194726" />
+    <state width="1491" height="210" key="GridCell.Tab.0.right" timestamp="1594008194726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593986177947" />
+    <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594008194726" />
     <state x="209" y="0" key="SettingsEditor" timestamp="1593985882452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
