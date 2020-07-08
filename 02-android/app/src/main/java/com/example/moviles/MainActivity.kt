@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         btn_ciclo_vida
             .setOnClickListener { boton ->
                 // this.irCicloDeVida()
+                //aqui
                 irCicloDeVida()
             }
 
