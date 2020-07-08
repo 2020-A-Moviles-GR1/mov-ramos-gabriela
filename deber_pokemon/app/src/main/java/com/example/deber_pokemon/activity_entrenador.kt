@@ -12,9 +12,15 @@ class activity_entrenador : AppCompatActivity() {
         setContentView(R.layout.activity_entrenador)
 
         btn_crear_entrenador
+                .setOnClickListener {
+
+            irCrearEntrenador()
+        }
+
+        btn_buscar_entrenador
             .setOnClickListener {
 
-                irCrearEntrenador()
+                irBuscarEntrenador()
             }
     }
 
@@ -24,6 +30,16 @@ class activity_entrenador : AppCompatActivity() {
             Intent( //solo necesitamos escribir el nombre de la clase para instanciar un nuevo objecto
                 this,                       //mandamos el this
                 activity_crear_entrenador::class.java     //mandamos la actividad a donde queremos que se vaya
+            )
+        startActivity(intentExplicito)
+    }
+
+
+    fun irBuscarEntrenador() {
+        val intentExplicito =
+            Intent( //solo necesitamos escribir el nombre de la clase para instanciar un nuevo objecto
+                this,                       //mandamos el this
+                activity_buscar_entrenador::class.java     //mandamos la actividad a donde queremos que se vaya
             )
         startActivity(intentExplicito)
     }
