@@ -1,0 +1,6 @@
+gg|rojo|23|true|23.23|
+gaby|azul|2|true|2.3|
+tefa|rojo|23|true|23.4|
+gg|rojo|23|true|23.23|
+gaby|azul|2|true|2.3|
+tefa|rojo|23|true|23.4|
