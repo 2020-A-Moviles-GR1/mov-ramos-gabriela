@@ -1,0 +1,2 @@
+nokia|finlandia|1900|true|1.2E10|
+apple|usa|1970|false|1.0E8|

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_entrenador">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Entrenador"
+        android:textColor="?android:attr/colorEdgeEffect"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_crear_entrenador"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="crear"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btn_buscar_entrenador"
+        android:layout_width="131dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="buscar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_entrenador"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_entrenador"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_entrenador" />
+
+    <Button
+        android:id="@+id/btn_elimimar_entrenador"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_editar_entrenador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_editar_entrenador"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar_entrenador" />
+
+    <Button
+        android:id="@+id/btn_editar_entrenador"
+        android:layout_width="127dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_buscar_entrenador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_buscar_entrenador"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_entrenador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
