@@ -100,6 +100,9 @@
       <workItem from="1593029072043" duration="10000" />
       <workItem from="1593031542212" duration="6377000" />
       <workItem from="1593814650382" duration="3021000" />
+      <workItem from="1594241453935" duration="701000" />
+      <workItem from="1594244100884" duration="45000" />
+      <workItem from="1594271340064" duration="6000" />
     </task>
     <servers />
   </component>
@@ -147,10 +150,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593034906041" />
-    <state x="209" y="14" key="new project wizard" timestamp="1592539418712">
+    <state x="72" y="0" key="new project wizard" timestamp="1594244143077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="14" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592539418712" />
+    <state x="72" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1594244143077" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1591880451238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
