@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.deber_pokemon"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:5:5-29:19
+12        android:allowBackup="true"
+12-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.3.0] C:\Users\gabyl\.gradle\caches\transforms-2\files-2.1\8106c9afeb27cc0c50f85995740f877c\core-1.3.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:10:9-35
+20        android:theme="@style/AppTheme" >
+20-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity android:name="com.example.deber_pokemon.activity_crear_pokemon" />
+21-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:12:9-69
+21-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:12:19-57
+22        <activity android:name="com.example.deber_pokemon.activity_eliminar_pokemon" />
+22-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:13:9-63
+22-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:13:19-60
+23        <activity android:name="com.example.deber_pokemon.activity_buscar_pokemon" />
+23-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:14:9-61
+23-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:14:19-58
+24        <activity android:name="com.example.deber_pokemon.activity_editar_pokemon" />
+24-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:15:9-61
+24-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:15:19-58
+25        <activity android:name="com.example.deber_pokemon.activity_eliminar_entrenador" />
+25-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:16:9-66
+25-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:16:19-63
+26        <activity android:name="com.example.deber_pokemon.activity_editar_entrenador" />
+26-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:17:9-64
+26-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:17:19-61
+27        <activity android:name="com.example.deber_pokemon.activity_pokemon" />
+27-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:18:9-54
+27-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:18:19-51
+28        <activity android:name="com.example.deber_pokemon.activity_buscar_entrenador" />
+28-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:19:9-64
+28-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:19:19-61
+29        <activity android:name="com.example.deber_pokemon.activity_crear_entrenador" />
+29-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:20:9-63
+29-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:20:19-60
+30        <activity android:name="com.example.deber_pokemon.activity_entrenador" />
+30-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:21:9-57
+30-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:21:19-54
+31        <activity android:name="com.example.deber_pokemon.MainActivity" >
+31-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:22:9-28:20
+31-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:22:19-47
+32            <intent-filter>
+32-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:24:17-69
+33-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:26:17-77
+35-->C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\moviles\mov-ramos-gabriela\deber_pokemon\app\src\main\AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

@@ -1,4 +1,5 @@
 import java.io.File
+import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.io.println as println1
 
@@ -15,7 +16,7 @@ fun main(args:Array<String>) {
 
 }
 
-fun leer_pokemon(pokemones: java.util.ArrayList<Pokemon>) {
+fun leer_pokemon(pokemones: ArrayList<Pokemon>) {
     File("pokemones.txt").forEachLine{
         var a = it.split("|")
         pokemones.add(Pokemon(a[0],a[1].toInt(),a[2].toFloat(),a[3].toBoolean(),a[4]))
