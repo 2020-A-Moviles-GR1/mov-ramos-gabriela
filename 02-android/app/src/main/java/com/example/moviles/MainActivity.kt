@@ -10,15 +10,26 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         btn_ciclo_vida
             .setOnClickListener { boton ->
-                // this.irCicloDeVida()
-                //aqui
                 irCicloDeVida()
             }
-
+        btn_list_view
+            .setOnClickListener { boton ->
+                irListView()
+            }
 
        // Log.i("Activity", "OnCreate")
+    }
+
+    fun irListView() {
+        val intentExplicito = Intent( //solo necesitamos escribir el nombre de la clase para instanciar un nuevo objecto
+            this,                       //mandamos el this
+            BListVuewActivity::class.java     //mandamos la actividad a donde queremos que se vaya
+        )
+        // this.startActivity(intentExplicito)
+        startActivity(intentExplicito) //para ejecutar necesitamos este metodo que esta dentro de la clase
     }
 
     fun irCicloDeVida() {
