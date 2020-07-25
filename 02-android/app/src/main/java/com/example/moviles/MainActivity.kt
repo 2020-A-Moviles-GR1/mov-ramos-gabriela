@@ -3,7 +3,6 @@ package com.example.moviles
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,12 +20,32 @@ class MainActivity : AppCompatActivity() {
             }
 
        // Log.i("Activity", "OnCreate")
+
+        btn_intent_respuesta
+            .setOnClickListener {
+                irAIntentConRespuesta()
+            }
     }
+
+
+    fun irAIntentConRespuesta(){
+        val intentExplicito = Intent(
+            this,
+            IntentEnviaParametros::class.java
+        )
+
+        intentExplicito.putExtra("numero",2)  //este putextra es para el primitivo entero
+
+        startActivity(intentExplicito)
+
+    }
+
+
 
     fun irListView() {
         val intentExplicito = Intent( //solo necesitamos escribir el nombre de la clase para instanciar un nuevo objecto
             this,                       //mandamos el this
-            BListVuewActivity::class.java     //mandamos la actividad a donde queremos que se vaya
+            BListViewActivity::class.java     //mandamos la actividad a donde queremos que se vaya
         )
         // this.startActivity(intentExplicito)
         startActivity(intentExplicito) //para ejecutar necesitamos este metodo que esta dentro de la clase

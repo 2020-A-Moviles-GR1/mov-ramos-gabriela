@@ -14,11 +14,11 @@ class CicloVida : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ciclo_vida)
         Log.i("Activity", "OnCreate")
+
         numeroActual = ServicioBDDMemoria.numero
-        if(numeroActual !=0){
+        if (numeroActual != 0) {
             tv_numero.text = numeroActual.toString()
         }
-
 
         btn_anadir
             .setOnClickListener {
@@ -28,8 +28,8 @@ class CicloVida : AppCompatActivity() {
     }
 
     fun sumarUnValor() {
-        tv_numero.text = numeroActual.toString()
         numeroActual = numeroActual + 1
+        ServicioBDDMemoria.anadirNumero()
         tv_numero.text = numeroActual.toString() //llenamos la pantallita
     }
 
@@ -76,6 +76,7 @@ class CicloVida : AppCompatActivity() {
         Log.i("Activity", "onSaveInstanceState")
         outState?.run {
             putInt("numeroActualGuardado",numeroActual)
+
         }
         super.onSaveInstanceState(outState)
 
