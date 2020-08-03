@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonActivity">
+
+    <Button
+        android:id="@+id/btn_acordes_a_lista"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/textColorLinkInverse"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Todos los Entrenadores"
+        android:textColor="#FBFBFB"
+        app:layout_constraintEnd_toEndOf="@+id/lv_acordes"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/lv_acordes"
+        app:layout_constraintTop_toBottomOf="@+id/lv_acordes" />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/holo_purple"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Menu Principal"
+        android:textColor="#FBFBFB"
+        app:layout_constraintEnd_toEndOf="@+id/btn_acordes_a_lista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_acordes_a_lista"
+        app:layout_constraintTop_toBottomOf="@+id/btn_acordes_a_lista" />
+
+    <TextView
+        android:id="@+id/tv_pokemones"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:backgroundTint="#9A000000"
+        android:text="Pokemones"
+        android:textAlignment="center"
+        android:textColor="#F8F8F8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lv_acordes"
+        android:layout_width="300dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="24dp"
+        android:background="#97FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cancion_y_autor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_cancion_y_autor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cancion_y_autor">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_cancion_y_autor"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pokemones"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/tv_pokemones"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pokemones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
