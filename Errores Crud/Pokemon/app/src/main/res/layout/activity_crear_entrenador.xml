@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearEntrenador">
+
+    <EditText
+        android:id="@+id/etv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Color"
+        app:layout_constraintEnd_toEndOf="@+id/etv_nombre"
+        app:layout_constraintStart_toStartOf="@+id/etv_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/etv_nombre" />
+
+    <EditText
+        android:id="@+id/etv_distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Distancia Caminada"
+        app:layout_constraintEnd_toEndOf="@+id/cb_activo_entrenador"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/cb_activo_entrenador"
+        app:layout_constraintTop_toBottomOf="@+id/cb_activo_entrenador" />
+
+    <CheckBox
+        android:id="@+id/cb_activo_entrenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Activo"
+        app:layout_constraintEnd_toEndOf="@+id/etv_nivel_entrenador"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/etv_nivel_entrenador"
+        app:layout_constraintTop_toBottomOf="@+id/etv_nivel_entrenador" />
+
+    <EditText
+        android:id="@+id/etv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        app:layout_constraintEnd_toEndOf="@+id/lv_entrenador"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/lv_entrenador"
+        app:layout_constraintTop_toBottomOf="@+id/lv_entrenador" />
+
+    <EditText
+        android:id="@+id/etv_nivel_entrenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nivel"
+        app:layout_constraintEnd_toEndOf="@+id/etv_color"
+        app:layout_constraintStart_toStartOf="@+id/etv_color"
+        app:layout_constraintTop_toBottomOf="@+id/etv_color" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="guardar"
+        app:layout_constraintEnd_toEndOf="@+id/etv_distancia"
+        app:layout_constraintStart_toStartOf="@+id/etv_distancia"
+        app:layout_constraintTop_toBottomOf="@+id/etv_distancia" />
+
+    <ListView
+        android:id="@+id/lv_entrenador"
+        android:layout_width="357dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

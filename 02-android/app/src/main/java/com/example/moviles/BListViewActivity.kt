@@ -5,19 +5,23 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import kotlinx.android.synthetic.main.activity_b_list_vuew.*
+import kotlinx.android.synthetic.main.activity_b_list_view.*
+import kotlinx.android.synthetic.main.activity_b_list_view.*
 
 class BListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_b_list_vuew)
+        setContentView(R.layout.activity_b_list_view)
+
         val listaEntrenadores: ArrayList<Entrenador> = arrayListOf<Entrenador>()
 
         listaEntrenadores.add(Entrenador("Adrian", "Eguez"))
-        listaEntrenadores.add(Entrenador("Gaby", "Ramos"))
-        listaEntrenadores.add(Entrenador("Tefa", "Ramos"))
-        listaEntrenadores.add(Entrenador("cornelio", "del rancho"))
-        listaEntrenadores.add(Entrenador("Pacho", "Villa"))
+        listaEntrenadores.add(Entrenador("Vicente", "Sarzosa"))
+        listaEntrenadores.add(Entrenador("Wendy", "Moises"))
+        listaEntrenadores.add(Entrenador("Ivan", "Parra"))
+        listaEntrenadores.add(Entrenador("Juan", "Duran"))
+        listaEntrenadores.add(Entrenador("Andrea", "Lara"))
+        listaEntrenadores.add(Entrenador("Lisa", "Guerrero"))
 
         val adaptador: ArrayAdapter<Entrenador> = ArrayAdapter(
             this, // Contexto
@@ -32,7 +36,6 @@ class BListViewActivity : AppCompatActivity() {
                 parent, view, position, id ->
             Log.i("list-view", "Posicion $position")
         }
-
 
         btn_anadir_entrenador
             .setOnClickListener {
@@ -53,6 +56,5 @@ class BListViewActivity : AppCompatActivity() {
         )
         adaptador.notifyDataSetChanged()
     }
-
 
 }

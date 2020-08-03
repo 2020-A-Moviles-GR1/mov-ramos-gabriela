@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivy">
+
+    <ListView
+        android:id="@+id/Lv_entrena"
+        android:layout_width="370dp"
+        android:layout_height="279dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/btn_guardar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/Lv_entrena"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/Lv_entrena"
+        app:layout_constraintTop_toBottomOf="@+id/Lv_entrena" />
+</androidx.constraintlayout.widget.ConstraintLayout>
