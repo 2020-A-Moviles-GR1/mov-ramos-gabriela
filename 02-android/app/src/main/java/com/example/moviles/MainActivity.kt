@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.provider.ContactsContract
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -111,6 +112,22 @@ class MainActivity : AppCompatActivity() {
         )
 
         intentExplicito.putExtra("numero",2)  //este putextra es para el primitivo entero
+
+        val adrian = Usuario(
+            "Adrian",
+            31,
+            Date(),
+            1.0
+        )
+        val cachetes = Mascota(
+            "Cachetes",
+            adrian
+        )
+        val arregloMascotas = arrayListOf<Mascota>(cachetes)
+
+        intentExplicito.putExtra("cachetes", cachetes)
+        intentExplicito.putExtra("arregloMascotas", arregloMascotas)
+
 
         startActivity(intentExplicito)
 
