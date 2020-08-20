@@ -35,7 +35,10 @@ module.exports = {
       type: 'string',
       regex:  /^[a-zA-Z]\w{3,14}$/
     },
- //
+    pokemons: { // One to Many (plural)
+      collection: 'pokemon', // Referencia al modelo
+      via: 'usuario' // Nombre Foreign Key en 'Pokemon'
+    }
   },
 };
 

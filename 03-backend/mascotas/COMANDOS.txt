@@ -1,0 +1,10 @@
+mascotas>sails lift --> levantar servidor
+
+1 --> developer
+
+
+    sails generate model XX
+
+    sails generate controller XX
+
+    sails generate API
