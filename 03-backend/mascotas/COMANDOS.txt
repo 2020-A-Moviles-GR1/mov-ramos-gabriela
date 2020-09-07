@@ -7,4 +7,5 @@ mascotas>sails lift --> levantar servidor
 
     sails generate controller XX
 
-    sails generate API
+    sails generate API  
+cuandoo creo API --> creo modelo y controlador
