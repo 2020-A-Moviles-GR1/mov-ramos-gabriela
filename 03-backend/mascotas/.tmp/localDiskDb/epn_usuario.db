@@ -1,7 +1,7 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"epn_cedula","unique":true,"sparse":false}}
 {"createdAt":1597887174687,"updatedAt":1597887174687,"id":1,"nombre":"Soy","correo":"123@epn.edu.ec","estadoCivil":"Soltero","password":"SuperSegur4","epn_cedula":"1234567890","_id":1}
-{"nombre":"gaby","correo":"g@epn.edu.ec","estadoCivil":"Casado","password":"clave1234","createdAt":1597926763115,"updatedAt":1597926763115,"id":2,"epn_cedula":"5678912340","_id":2}
-{"nombre":"tefa","correo":"tefa@epn.edu.ec","estadoCivil":"Divorciado","password":"clave1234","createdAt":1597926855325,"updatedAt":1597926855325,"id":4,"epn_cedula":"5678912341","_id":4}
-{"nombre":"maria","correo":"maria@epn.edu.ec","estadoCivil":"Viudo","password":"clave1234","createdAt":1597926921954,"updatedAt":1597926921954,"id":5,"epn_cedula":"8567891234","_id":5}
-{"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","createdAt":1597926955326,"updatedAt":1597926955326,"id":6,"epn_cedula":"7785678912","_id":6}
+{"createdAt":1597926763115,"updatedAt":1597926763115,"id":2,"nombre":"gaby","correo":"g@epn.edu.ec","estadoCivil":"Casado","password":"clave1234","epn_cedula":"5678912340","_id":2}
+{"createdAt":1597926855325,"updatedAt":1597926855325,"id":4,"nombre":"tefa","correo":"tefa@epn.edu.ec","estadoCivil":"Divorciado","password":"clave1234","epn_cedula":"5678912341","_id":4}
+{"createdAt":1597926921954,"updatedAt":1597926921954,"id":5,"nombre":"maria","correo":"maria@epn.edu.ec","estadoCivil":"Viudo","password":"clave1234","epn_cedula":"8567891234","_id":5}
+{"createdAt":1597926955326,"updatedAt":1597926955326,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
