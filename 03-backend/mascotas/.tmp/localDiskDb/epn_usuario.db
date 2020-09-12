@@ -5,3 +5,20 @@
 {"createdAt":1597926855325,"updatedAt":1597926855325,"id":4,"nombre":"tefa","correo":"tefa@epn.edu.ec","estadoCivil":"Divorciado","password":"clave1234","epn_cedula":"5678912341","_id":4}
 {"createdAt":1597926921954,"updatedAt":1597926921954,"id":5,"nombre":"maria","correo":"maria@epn.edu.ec","estadoCivil":"Viudo","password":"clave1234","epn_cedula":"8567891234","_id":5}
 {"createdAt":1597926955326,"updatedAt":1597926955326,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675174709,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675185906,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675185906,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675185906,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675262057,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675300737,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":6}
+{"createdAt":1597926955326,"updatedAt":1599675305507,"id":6,"nombre":"pedro","correo":"pedro@epn.edu.ec","estadoCivil":"Unión libre","password":"clave1234","epn_cedula":"7785678912","_id":6}
+{"$$deleted":true,"_id":1}
+{"$$deleted":true,"_id":2}
+{"id":1,"nombre":"gaag","correo":"gg@epn.edu.ec","estadoCivil":"Divorciado","password":"clave1234","createdAt":1599675678554,"updatedAt":1599675678554,"epn_cedula":"5678912221","_id":1}
