@@ -26,8 +26,6 @@
         <activity android:name="com.example.afinal.ListaEntrenadoresActivity" />
         <activity android:name="com.example.afinal.AgregarEntrenadorActivity" />
         <activity android:name="com.example.afinal.PokemonActivity" />
-        <activity android:name="com.example.afinal.MenuEstudiante" />
-        <activity android:name="com.example.afinal.CrearEstudiante" />
         <activity android:name="com.example.afinal.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

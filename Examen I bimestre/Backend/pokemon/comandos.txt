@@ -1,0 +1,4 @@
+sails lift -- dentro de carpeta pokemon para levantar servidor
+sails generate api entrenador -- crea una api contrlador y modelo
+controlador ''metodos
+modelo -- que podemos ir guardando
