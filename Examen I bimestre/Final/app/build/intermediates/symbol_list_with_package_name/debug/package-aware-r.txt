@@ -815,7 +815,7 @@ id line3
 id listMode
 id list_item
 id lv_acordes
-id lv_canciones
+id lv_entrenadores
 id lv_lista_pokemones
 id message
 id middle

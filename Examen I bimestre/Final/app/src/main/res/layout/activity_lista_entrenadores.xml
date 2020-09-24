@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/lv_canciones"
+        android:id="@+id/lv_entrenadores"
         android:layout_width="326dp"
         android:layout_height="353dp"
         android:layout_marginTop="16dp"
@@ -57,8 +57,8 @@
         android:backgroundTint="@android:color/holo_green_dark"
         android:text="Crear Entrenador"
         android:textColor="@android:color/background_light"
-        app:layout_constraintEnd_toEndOf="@+id/lv_canciones"
-        app:layout_constraintStart_toStartOf="@+id/lv_canciones"
-        app:layout_constraintTop_toBottomOf="@+id/lv_canciones" />
+        app:layout_constraintEnd_toEndOf="@+id/lv_entrenadores"
+        app:layout_constraintStart_toStartOf="@+id/lv_entrenadores"
+        app:layout_constraintTop_toBottomOf="@+id/lv_entrenadores" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

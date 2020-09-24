@@ -814,7 +814,7 @@ int id line3 0x7f070082
 int id listMode 0x7f070083
 int id list_item 0x7f070084
 int id lv_acordes 0x7f070085
-int id lv_canciones 0x7f070086
+int id lv_entrenadores 0x7f070086
 int id lv_lista_pokemones 0x7f070087
 int id message 0x7f070088
 int id middle 0x7f070089

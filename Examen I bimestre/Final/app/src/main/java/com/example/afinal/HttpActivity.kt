@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.fuel.httpPost
+import com.github.kittinunf.fuel.httpPut
 import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_http.*
 
@@ -18,8 +20,47 @@ class HttpActivity : AppCompatActivity() {
             .setOnClickListener {
                 obtenerEntrenador()
             }
+        btn_crear.setOnClickListener {
+            crearEntrenador()
+        }
 
     }
+
+
+    fun crearEntrenador() {
+        val url = urlPrincipal + "/entrenador"
+
+        val parametrosEntrenador = listOf(
+
+        "nombre" to "tefa PRUEBACREAR",
+        "color" to "MORADO",
+        "nivel" to "8",
+        "activo" to "false"
+        )
+
+        url.httpPost(parametrosEntrenador).responseString{
+            req, res, result ->
+        when(result){
+            is Result.Failure->{
+                val error = result.getException()
+                Log.i("http-klaxon", "error: ${error}")
+
+            }
+            is Result.Success->{
+                val usuarioString = result.get()
+                Log.i("http-klaon", "AQUI ${usuarioString}")
+
+            }
+
+        }
+
+        }
+
+
+    }
+
+
+
 
     fun obtenerEntrenador(){
         val pokemonString = """

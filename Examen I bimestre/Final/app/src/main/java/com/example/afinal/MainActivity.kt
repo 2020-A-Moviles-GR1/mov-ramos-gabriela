@@ -13,12 +13,20 @@ class MainActivity : AppCompatActivity() {
             this.startActivity(Intent(this, AgregarEntrenadorActivity::class.java))
         }
         btn_entrenador.setOnClickListener {
-            this.startActivity(Intent(this,ListaEntrenadoresActivity::class.java))
+            AbrirListaEntrenadores()
         }
         btn_http.setOnClickListener {
             abrirActividadHttp()
         }
 
+    }
+
+    fun AbrirListaEntrenadores(){
+        val intentExplicito = Intent(
+            this,
+            ListaEntrenadoresActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
     fun abrirActividadHttp() {
