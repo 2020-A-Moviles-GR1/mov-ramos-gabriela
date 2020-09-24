@@ -9,8 +9,8 @@ class EntrenadorHttp (
     var nombre: String,
     var color: String,
     var nivel: Int,
-    var activo: Boolean
-   // var pokemons: ArrayList<PokemonHttp>
+    var activo: Boolean,
+    var pokemons: ArrayList<PokemonHttp>
 ){
 
     var fechaCreacion: Date

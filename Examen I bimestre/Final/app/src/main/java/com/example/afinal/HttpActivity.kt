@@ -50,11 +50,26 @@ class HttpActivity : AppCompatActivity() {
             is Result.Failure ->{
                 val ex= result.getException()
                 Log.i("http-klaxon", "error: ${ex.message}")
+
             }
 
             is Result.Success ->{
                 val data= result.get()
                 Log.i("http-klaxon", "data: ${data}")
+
+                val entrenadores = Klaxon().parseArray<EntrenadorHttp>(data)
+                if(entrenadores!=null){
+                    entrenadores.forEach{
+                        Log.i("http-klaxon", "ENTRENADOR nombre : ${it.nombre} "+ "COLOR: ${it.color}" )
+                    if (it.pokemons.size>0){
+                        it.pokemons.forEach {
+                            Log.i("http-klaxon", "POKEMON  : ${it.nombre} " )
+
+                        }
+
+                    }
+                    }
+                }
 
             }
         }
