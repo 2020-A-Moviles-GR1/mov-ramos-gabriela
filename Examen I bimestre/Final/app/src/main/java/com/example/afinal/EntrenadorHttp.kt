@@ -1,5 +1,7 @@
 package com.example.afinal
 
+import java.util.*
+
 class EntrenadorHttp (
     var id: Int,
     var createdAt: Long,
@@ -10,5 +12,12 @@ class EntrenadorHttp (
     var activo: Boolean
    // var pokemons: ArrayList<PokemonHttp>
 ){
+
+    var fechaCreacion: Date
+    var fechaActualizacion: Date
+    init {
+        fechaCreacion = Date(createdAt)
+        fechaActualizacion = Date(updatedAt)
+    }
 
 }
