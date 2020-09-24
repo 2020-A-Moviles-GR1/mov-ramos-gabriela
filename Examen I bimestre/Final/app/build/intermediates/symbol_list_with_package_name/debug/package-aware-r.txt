@@ -753,15 +753,18 @@ id btn_agregar_a_lista
 id btn_agregar_a_main
 id btn_agregar_modificar
 id btn_cancion_a_main
+id btn_crear
 id btn_crear_entrenador
 id btn_eliminar
 id btn_eliminar_pokemon
 id btn_entrenador
+id btn_http
 id btn_ir_entrena
 id btn_lista_a_main
 id btn_menu
 id btn_modificar
 id btn_modificar_pokemon
+id btn_obtener
 id btn_pokemon
 id buttonPanel
 id center_vertical
@@ -949,6 +952,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_agregar_entrenador
 layout activity_entrenador
+layout activity_http
 layout activity_lista_entrenadores
 layout activity_lista_pokemones
 layout activity_main

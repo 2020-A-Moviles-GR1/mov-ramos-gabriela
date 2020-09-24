@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaPokemones"></activity>
+        <activity android:name=".HttpActivity"></activity>
+        <activity android:name=".ListaPokemones" />
         <activity android:name=".ModificarPokemonActivity" />
         <activity android:name=".EntrenadorActivity" />
         <activity android:name=".ListaEntrenadoresActivity" />

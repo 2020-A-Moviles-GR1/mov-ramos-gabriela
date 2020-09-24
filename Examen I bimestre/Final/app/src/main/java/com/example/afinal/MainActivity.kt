@@ -15,7 +15,18 @@ class MainActivity : AppCompatActivity() {
         btn_entrenador.setOnClickListener {
             this.startActivity(Intent(this,ListaEntrenadoresActivity::class.java))
         }
+        btn_http.setOnClickListener {
+            abrirActividadHttp()
+        }
 
+    }
+
+    fun abrirActividadHttp() {
+        val intentExplicito = Intent(
+            this,
+            HttpActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
 }

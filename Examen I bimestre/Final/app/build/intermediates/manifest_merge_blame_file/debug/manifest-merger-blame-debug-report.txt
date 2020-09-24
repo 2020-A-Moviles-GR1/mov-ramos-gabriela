@@ -11,7 +11,7 @@
 9-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:5:5-25:19
+11-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:5:5-26:19
 12        android:allowBackup="true"
 12-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,38 +29,41 @@
 20        android:testOnly="true"
 21        android:theme="@style/AppTheme" >
 21-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:11:9-40
-22        <activity android:name="com.example.afinal.ListaPokemones" />
-22-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:12:9-61
-22-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:12:19-49
-23        <activity android:name="com.example.afinal.ModificarPokemonActivity" />
-23-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:13:9-62
-23-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:13:19-59
-24        <activity android:name="com.example.afinal.EntrenadorActivity" />
-24-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:14:9-56
-24-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:14:19-53
-25        <activity android:name="com.example.afinal.ListaEntrenadoresActivity" />
-25-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:15:9-63
-25-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:15:19-60
-26        <activity android:name="com.example.afinal.AgregarEntrenadorActivity" />
+22        <activity android:name="com.example.afinal.HttpActivity" />
+22-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:12:9-59
+22-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:12:19-47
+23        <activity android:name="com.example.afinal.ListaPokemones" />
+23-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:13:9-52
+23-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:13:19-49
+24        <activity android:name="com.example.afinal.ModificarPokemonActivity" />
+24-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:14:9-62
+24-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:14:19-59
+25        <activity android:name="com.example.afinal.EntrenadorActivity" />
+25-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:15:9-56
+25-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:15:19-53
+26        <activity android:name="com.example.afinal.ListaEntrenadoresActivity" />
 26-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:16:9-63
 26-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:16:19-60
-27        <activity android:name="com.example.afinal.PokemonActivity" />
-27-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:9-53
-27-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:19-50
-28        <activity android:name="com.example.afinal.MainActivity" >
-28-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:9-24:20
-28-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:19-47
-29            <intent-filter>
-29-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:13-23:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:17-69
-30-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:22:17-77
-32-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:22:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+27        <activity android:name="com.example.afinal.AgregarEntrenadorActivity" />
+27-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:9-63
+27-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:19-60
+28        <activity android:name="com.example.afinal.PokemonActivity" />
+28-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:9-53
+28-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:19-50
+29        <activity android:name="com.example.afinal.MainActivity" >
+29-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:9-25:20
+29-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:19-47
+30            <intent-filter>
+30-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:13-24:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:21:17-69
+31-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:21:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:23:17-77
+33-->C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:23:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

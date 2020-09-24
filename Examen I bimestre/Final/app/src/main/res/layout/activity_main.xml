@@ -34,5 +34,16 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_entrenador"
         tools:srcCompat="@drawable/pokebola" />
 
+    <Button
+        android:id="@+id/btn_http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="HTTP"
+        app:layout_constraintEnd_toEndOf="@+id/btn_pokemon"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/btn_pokemon"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pokemon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

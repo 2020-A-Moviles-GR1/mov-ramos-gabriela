@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.afinal.HttpActivity" />
         <activity android:name="com.example.afinal.ListaPokemones" />
         <activity android:name="com.example.afinal.ModificarPokemonActivity" />
         <activity android:name="com.example.afinal.EntrenadorActivity" />

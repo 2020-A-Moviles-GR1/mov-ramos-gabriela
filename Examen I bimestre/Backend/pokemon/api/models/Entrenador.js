@@ -8,22 +8,24 @@
 module.exports = {
 
   attributes: {
+   
+    nombre:{
+      type: 'string',
+      minLength: 3,
+      required: true, // Por defecto es false
+    },
+    color:{
+      type: 'string'
+      
+    },
+    nivel:{
+      type: 'number'
 
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
-
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
+    },
+   
+    pokemons: { // One to Many (plural)
+      collection: 'pokemon', // Referencia al modelo
+      via: 'entrenador' // Nombre Foreign Key en 'Pokemon'
+    }
   },
-
 };
-
