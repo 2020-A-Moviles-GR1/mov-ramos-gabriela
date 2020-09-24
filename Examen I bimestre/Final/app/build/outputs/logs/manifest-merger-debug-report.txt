@@ -1,58 +1,70 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\8980d788014fcfbd6a5e16fdd30ae692\jetified-core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\38d73252397e14f6b2ca8374e68e18f7\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\656c1ef9c96eb9844c4fefaa31eea625\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\bf8b737aa06780ce71e42516cac8efab\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f3dbe6f90843045abe4143e3bf77be20\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\196689ac7938efd9fe7bde63e1bf8c1a\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\9e0815ff37e116a5a118a87691bd2001\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\24e0220640645498700fd025d00cbee9\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\2a612bd4c425dcfbfc1a3a304e287881\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7d26c1198e9e9b91c6c8304fbdc008ea\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\76e2c37ae32353ccc0fe554bfc39f522\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\c12747f68fadffbb0e0ad871896b687f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6f621cac338d61e4657df2851636b5fa\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f128d6cea3d455c774f9a9ff8c16c636\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4641752ec657f9b4a42d6a06f25d7d22\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4105de63edbfe1f7a89f44426cee4e60\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\421595daf2c691dedd5c6b994b674539\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\1376040c7d3147fc2c401857e5e5a47d\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\a30017872b14105a400314921d5cb62e\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7883f5b2dab973bb3ded7066b810b9ab\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4ce449428576c173262907fc1e6b1200\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.3.1] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\3fad7ea4f0b845c6f6667debb95e1494\core-1.3.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\22f084678c0c8123034752ff82b9a006\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6118f679eabfffe3c12f082544a87853\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7ab9174479fb69088763d43ae7121c6c\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f99660dd63e7ed3a1e117a2af2f25bf8\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\0a9c6c10530aac001e1e59b7495bfbcb\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6ba1de9be899b775fb2e622bcf9ee329\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\d86a462a03ac6ffb4f3ab144448281f8\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\fed0f8ee682bb48ac1e603badd88b3de\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\aa817d39ca4f9f9f764e5a0b70163814\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6ba1de9be899b775fb2e622bcf9ee329\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\b77732ae052c8a7beadaefc4f5cc2d1b\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\cfdba3a9d264c21140cf4b27a073b375\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\ef7f8b788d30752a01fb2308ec81e29a\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:5:5-79
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:8:5-30:19
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:8:5-31:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\656c1ef9c96eb9844c4fefaa31eea625\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\656c1ef9c96eb9844c4fefaa31eea625\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.3.1] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\3fad7ea4f0b845c6f6667debb95e1494\core-1.3.1\AndroidManifest.xml:24:5-89
@@ -72,51 +84,55 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ga
 	android:allowBackup
 		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:14:9-40
 	android:usesCleartextTraffic
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:14:9-44
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:15:9-44
+activity#com.example.afinal.RecyclerViewActivity
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:16:9-67
+	android:name
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:16:19-55
 activity#com.example.afinal.HttpActivity
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:16:9-59
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:9-50
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:16:19-47
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:19-47
 activity#com.example.afinal.ListaPokemones
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:9-52
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:9-52
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:17:19-49
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:19-49
 activity#com.example.afinal.ModificarPokemonActivity
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:9-62
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:9-62
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:18:19-59
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:19-59
 activity#com.example.afinal.EntrenadorActivity
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:9-56
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:9-56
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:19:19-53
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:19-53
 activity#com.example.afinal.ListaEntrenadoresActivity
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:9-63
-	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:20:19-60
-activity#com.example.afinal.AgregarEntrenadorActivity
 ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:21:9-63
 	android:name
 		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:21:19-60
+activity#com.example.afinal.AgregarEntrenadorActivity
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:22:9-63
+	android:name
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:22:19-60
 activity#com.example.afinal.PokemonActivity
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:22:9-53
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:23:9-53
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:22:19-50
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:23:19-50
 activity#com.example.afinal.MainActivity
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:23:9-29:20
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:24:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml:28:27-74
 uses-sdk
 INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Github-gaby\mov-ramos-gabriela\Examen I bimestre\Final\app\src\main\AndroidManifest.xml
@@ -127,12 +143,22 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Gaby\.gradle\caches\tr
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\38d73252397e14f6b2ca8374e68e18f7\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\656c1ef9c96eb9844c4fefaa31eea625\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\656c1ef9c96eb9844c4fefaa31eea625\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\bf8b737aa06780ce71e42516cac8efab\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\bf8b737aa06780ce71e42516cac8efab\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f3dbe6f90843045abe4143e3bf77be20\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f3dbe6f90843045abe4143e3bf77be20\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\196689ac7938efd9fe7bde63e1bf8c1a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\196689ac7938efd9fe7bde63e1bf8c1a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\9e0815ff37e116a5a118a87691bd2001\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\9e0815ff37e116a5a118a87691bd2001\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\24e0220640645498700fd025d00cbee9\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\24e0220640645498700fd025d00cbee9\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\2a612bd4c425dcfbfc1a3a304e287881\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\2a612bd4c425dcfbfc1a3a304e287881\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7d26c1198e9e9b91c6c8304fbdc008ea\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7d26c1198e9e9b91c6c8304fbdc008ea\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\76e2c37ae32353ccc0fe554bfc39f522\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\76e2c37ae32353ccc0fe554bfc39f522\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\c12747f68fadffbb0e0ad871896b687f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\c12747f68fadffbb0e0ad871896b687f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6f621cac338d61e4657df2851636b5fa\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -143,22 +169,36 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Gab
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4641752ec657f9b4a42d6a06f25d7d22\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4105de63edbfe1f7a89f44426cee4e60\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4105de63edbfe1f7a89f44426cee4e60\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\421595daf2c691dedd5c6b994b674539\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\421595daf2c691dedd5c6b994b674539\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\1376040c7d3147fc2c401857e5e5a47d\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\1376040c7d3147fc2c401857e5e5a47d\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\a30017872b14105a400314921d5cb62e\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\a30017872b14105a400314921d5cb62e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7883f5b2dab973bb3ded7066b810b9ab\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7883f5b2dab973bb3ded7066b810b9ab\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4ce449428576c173262907fc1e6b1200\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\4ce449428576c173262907fc1e6b1200\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.3.1] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\3fad7ea4f0b845c6f6667debb95e1494\core-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.1] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\3fad7ea4f0b845c6f6667debb95e1494\core-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\22f084678c0c8123034752ff82b9a006\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\22f084678c0c8123034752ff82b9a006\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6118f679eabfffe3c12f082544a87853\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6118f679eabfffe3c12f082544a87853\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7ab9174479fb69088763d43ae7121c6c\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\7ab9174479fb69088763d43ae7121c6c\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f99660dd63e7ed3a1e117a2af2f25bf8\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\f99660dd63e7ed3a1e117a2af2f25bf8\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\0a9c6c10530aac001e1e59b7495bfbcb\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\0a9c6c10530aac001e1e59b7495bfbcb\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6ba1de9be899b775fb2e622bcf9ee329\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6ba1de9be899b775fb2e622bcf9ee329\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\d86a462a03ac6ffb4f3ab144448281f8\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\d86a462a03ac6ffb4f3ab144448281f8\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\fed0f8ee682bb48ac1e603badd88b3de\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\fed0f8ee682bb48ac1e603badd88b3de\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\aa817d39ca4f9f9f764e5a0b70163814\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\aa817d39ca4f9f9f764e5a0b70163814\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6ba1de9be899b775fb2e622bcf9ee329\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\6ba1de9be899b775fb2e622bcf9ee329\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\b77732ae052c8a7beadaefc4f5cc2d1b\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\b77732ae052c8a7beadaefc4f5cc2d1b\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Gaby\.gradle\caches\transforms-2\files-2.1\cfdba3a9d264c21140cf4b27a073b375\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44

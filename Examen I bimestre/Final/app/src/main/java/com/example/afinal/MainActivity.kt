@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         btn_http.setOnClickListener {
             abrirActividadHttp()
         }
+        btn_recycler.setOnClickListener {
+            abrirRecycler()
+        }
 
     }
 
@@ -37,4 +40,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentExplicito)
     }
 
+    fun abrirRecycler() {
+        val intentExplicito = Intent(
+            this,
+            RecyclerViewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
 }

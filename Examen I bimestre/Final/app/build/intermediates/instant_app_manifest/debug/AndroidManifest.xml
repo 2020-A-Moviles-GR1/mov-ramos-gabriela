@@ -24,6 +24,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.afinal.RecyclerViewActivity" />
         <activity android:name="com.example.afinal.HttpActivity" />
         <activity android:name="com.example.afinal.ListaPokemones" />
         <activity android:name="com.example.afinal.ModificarPokemonActivity" />

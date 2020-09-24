@@ -38,12 +38,23 @@
         android:id="@+id/btn_http"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="20dp"
         android:text="HTTP"
         app:layout_constraintEnd_toEndOf="@+id/btn_pokemon"
         app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="@+id/btn_pokemon"
         app:layout_constraintTop_toBottomOf="@+id/btn_pokemon" />
+
+    <Button
+        android:id="@+id/btn_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Recycler"
+        app:layout_constraintEnd_toEndOf="@+id/btn_http"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_http"
+        app:layout_constraintTop_toBottomOf="@+id/btn_http" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
