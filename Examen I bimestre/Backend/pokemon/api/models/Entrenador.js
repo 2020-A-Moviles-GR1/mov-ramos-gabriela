@@ -22,6 +22,10 @@ module.exports = {
       type: 'number'
 
     },
+    activo:{
+      type: 'boolean'
+
+    },
    
     pokemons: { // One to Many (plural)
       collection: 'pokemon', // Referencia al modelo

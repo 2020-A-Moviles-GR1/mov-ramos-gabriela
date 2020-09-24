@@ -15,6 +15,13 @@ module.exports = {
     },
     tipo:{
       type: 'string'
+    },  nivel:{
+      type: 'number'
+
+    },
+    activo:{
+      type: 'boolean'
+
     },
     entrenador: { // Many to One (nombre FK) - mismo nombre q la relacion
       model: 'entrenador',

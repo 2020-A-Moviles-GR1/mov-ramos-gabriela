@@ -6,7 +6,8 @@ class EntrenadorHttp (
     var updatedAt: Long,
     var nombre: String,
     var color: String,
-    var nivel: Int
+    var nivel: Int,
+    var activo: Boolean
    // var pokemons: ArrayList<PokemonHttp>
 ){
 
