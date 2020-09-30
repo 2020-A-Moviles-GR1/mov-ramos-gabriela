@@ -14,7 +14,9 @@ class ListaEntrenadoresActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lista_entrenadores)
 
 
-        val listaEntrenadores= BddService.listaEntrenadores
+        val listaEntrenadores= BddService.listaCanciones
+        Log.i("Lista-Http","${listaEntrenadores}")
+
 
 
         val adaptador= ArrayAdapter(
@@ -27,7 +29,7 @@ class ListaEntrenadoresActivity : AppCompatActivity() {
         lv_entrenadores.onItemClickListener= AdapterView.OnItemClickListener{
                 parent,view,position,id ->
             Log.i("list-view","Posicion ${listaEntrenadores[position]}")
-            irEntrenador(position);
+            irEntrenador(listaEntrenadores[position].id);
         }
         btn_lista_a_main.setOnClickListener {
             this.startActivity(Intent(this,MainActivity::class.java))
@@ -38,9 +40,9 @@ class ListaEntrenadoresActivity : AppCompatActivity() {
         }
 
 
-
-
-
+    }
+    init {
+        BddService.getCanciones()
     }
     fun irEntrenador(posicion:Int){
         val intentExplicito= Intent(this, EntrenadorActivity::class.java)

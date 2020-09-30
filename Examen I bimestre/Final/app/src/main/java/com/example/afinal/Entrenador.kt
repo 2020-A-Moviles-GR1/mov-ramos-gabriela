@@ -1,13 +1,17 @@
 package com.example.afinal
 
-class Entrenador(
+ class Entrenador (
+    var id: Int,
+    var createdAt: Long,
+    var updatedAt: Long,
     var nombre:String,
     var color:String,
-    var nivel:Int,
-    var activo: Boolean,
-    var listaPokemones:String) {
-    override fun toString(): String {
-        return "Nombre Entrenador: ${nombre} ,Color: ${color}  "
-    }
+    var nivel:String,
+    var activo:String,
 
-}
+    var pokemones:String) {
+
+     override fun toString(): String {
+         return "Nombre: ${nombre}, color:${color}"
+     }
+ }

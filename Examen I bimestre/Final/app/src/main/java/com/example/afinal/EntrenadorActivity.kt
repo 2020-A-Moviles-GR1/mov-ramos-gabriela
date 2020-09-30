@@ -3,6 +3,7 @@ package com.example.afinal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_entrenador.*
 
@@ -13,20 +14,24 @@ class EntrenadorActivity : AppCompatActivity() {
         val posicion= intent.getIntExtra("index",-1)
 
         if(posicion>-1){
-            var entrenador:Entrenador= BddService.obtener_entrenador(posicion)
-            var pokemon:Pokemon= BddService.obtener_pokemon(posicion)
-            tv_nombre.text=entrenador.nombre;
-            tv_color.text=entrenador.color;
-            tv_nivel.text=entrenador.nivel.toString();
-            tv_activo_entre.text=entrenador.activo.toString();
-            tv_pokemones.text= pokemon.nombre;
+            var cancion: Entrenador? = BddService.obtenerCancion(posicion)
+            Log.i("ID-http","${posicion}")
+            if (cancion != null) {
+                tv_nombre.text=cancion.nombre
+                tv_color.text=cancion.color;
+                tv_nivel.text= cancion.nivel.toString();
+                tv_activo_entre.text=cancion.activo.toString();
+                tv_pokemones.text=cancion.pokemones
+            };
 
             btn_eliminar.setOnClickListener {
-                BddService.eliminar_entrendor(entrenador)
+            //    BddService.eliminar_entrendor(entrenador)
                 Toast.makeText(applicationContext,"Entrenador Eliminado", Toast.LENGTH_SHORT).show()
                 ir_lista_entrenadores()
             }
             btn_modificar.setOnClickListener {
+                var pokemones: Entrenador? = BddService.obtenerCancion(posicion)
+
                 ir_agregar_entrenador(posicion);
             }
             btn_a_acordeslist.setOnClickListener {
@@ -55,8 +60,8 @@ class EntrenadorActivity : AppCompatActivity() {
         this.startActivity(intentExplicito)
     }
     fun ir_pokemon_entrenador(posicion:Int){
-        val intentExplicito= Intent(this, PokemonActivity::class.java)
-        intentExplicito.putExtra("index",posicion)
+        val intentExplicito= Intent(this, ListaPokemones::class.java)
+        intentExplicito.putExtra("index",posicion   )
         this.startActivity(intentExplicito)
     }
 }

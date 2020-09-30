@@ -18,4 +18,8 @@ class PokemonHttp(
         fechaCreacion = Date(createdAt)
         fechaActualizacion = Date(updatedAt)
     }
+
+    override fun toString(): String {
+        return " ${nombre}, ${tipo} "
+    }
 }

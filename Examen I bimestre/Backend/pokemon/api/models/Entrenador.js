@@ -8,28 +8,32 @@
 module.exports = {
 
   attributes: {
-   
+
     nombre:{
-      type: 'string',
-      minLength: 3,
-      required: true, // Por defecto es false
+      type:'string',
+      required:true, // Por defecto es false
     },
     color:{
-      type: 'string'
-      
+      type: 'string',
+
     },
     nivel:{
-      type: 'number'
+      type:'string',
 
     },
     activo:{
-      type: 'boolean'
+      type:'string',
 
     },
-   
+
+   pokemones:{
+      type:'string',
+    }
+/*
     pokemons: { // One to Many (plural)
       collection: 'pokemon', // Referencia al modelo
       via: 'entrenador' // Nombre Foreign Key en 'Pokemon'
     }
+*/
   },
 };

@@ -11,22 +11,30 @@ module.exports = {
   attributes: {
 
     nombre:{
-      type: 'string'
+      type: 'string',
     },
     tipo:{
-      type: 'string'
-    },  nivel:{
-      type: 'number'
+      type: 'string',
+    },
+    nivel:{
+      type: 'string',
 
     },
-    activo:{
-      type: 'boolean'
+
+    entrenador:{
+      type: 'string',
 
     },
+
+
+/*
     entrenador: { // Many to One (nombre FK) - mismo nombre q la relacion
       model: 'entrenador',
-      required: true // (Es opcional 1 muchos 0 muchos)
+     // required: true // (Es opcional 1 muchos 0 muchos)
     }
+
+*/
   },
+
 };
 

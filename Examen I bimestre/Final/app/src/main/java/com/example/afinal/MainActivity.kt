@@ -9,8 +9,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         btn_pokemon.setOnClickListener {
-            this.startActivity(Intent(this, AgregarEntrenadorActivity::class.java))
+            this.startActivity(Intent(this, ListaPokemones::class.java))
         }
         btn_entrenador.setOnClickListener {
             AbrirListaEntrenadores()
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun AbrirListaEntrenadores(){
+
         val intentExplicito = Intent(
             this,
             ListaEntrenadoresActivity::class.java
@@ -47,4 +49,7 @@ class MainActivity : AppCompatActivity() {
         )
         startActivity(intentExplicito)
     }
+
+
+
 }

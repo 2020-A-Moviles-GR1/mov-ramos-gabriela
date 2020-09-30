@@ -1,13 +1,11 @@
 package com.example.afinal
 
-class Pokemon(
-    var nombre:String,
-    var tipo:String,
-    var nivel: String
-
-     ) {
+class Pokemons(var id: Int,var nombre:String,
+               var tipo:String, var nivel: String,
+               var activo: String, var entrenador: String) {
     override fun toString(): String {
-        return " ${nombre}, ${tipo} "
+        return "id: ${id}, nombre:${nombre}, tipo: ${tipo}, nivel:${nivel}, entrenador:${entrenador}"
     }
+
 
 }

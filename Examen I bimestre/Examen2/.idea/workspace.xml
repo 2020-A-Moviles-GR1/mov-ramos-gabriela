@@ -55,7 +55,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-03T02:28:44.616Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Final" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="ide.date.format" />
   </component>
   <component name="RecentsManager">

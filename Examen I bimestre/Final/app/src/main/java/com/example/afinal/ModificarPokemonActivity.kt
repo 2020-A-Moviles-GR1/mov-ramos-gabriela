@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_agregar_entrenador.*
+import kotlinx.android.synthetic.main.activity_entrenador.*
 import kotlinx.android.synthetic.main.activity_modificar_pokemon.*
 
 class ModificarPokemonActivity : AppCompatActivity() {
@@ -12,41 +14,51 @@ class ModificarPokemonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_modificar_pokemon)
         val posicion_entrenador= intent.getIntExtra("posicon_entrenador", -1)
-       val posicion= intent.getIntExtra("posicion_pokemon", -1)
+       var posicion= intent.getIntExtra("posicion_pokemon", -1)
         val nombrellega : String? = intent.getStringExtra("nombre_pokemon")
         val tipollega : String? = intent.getStringExtra("tipo_pokemon")
         val nivelllega : String? = intent.getStringExtra("nivel_pokemon")
-        Log.i("list-view","posicion recibido ${posicion}")
-        val Entrenador_dueno=BddService.obtener_entrenador(posicion_entrenador)
-        val pokemon_encontrado=BddService.buscar_pokemon(nombrellega.toString())
-        if(pokemon_encontrado!=null){
-            Log.i("list-view","Pokemon para modificar $pokemon_encontrado")
-            //Modificar Pokemon
+        Log.i("Http-klaxonPOKEMON","posicion recibido ${posicion}")
+        val Entrenador_dueno=BddService.obtenerCancion(posicion_entrenador)
+        val pokemon_encontrado=BddService.buscarAcorde(nombrellega.toString())
 
-            etv_nombre_poke_mod.setText(nombrellega)
-            etv_tipo_poke_mod.setText(tipollega)
-            et_nivel_pokemon_ed.setText(nivelllega)
+        if(posicion>-1){
+            var pokemon = BddService.obtenerPokemon(posicion)
+            Log.i("ENVIOOOOO","LLEGA: ${pokemon}")
 
-            // this.startActivity(Intent(this,ModificarPokemonActivity::class.java))
+            etv_id_pokemon.setText(pokemon?.id.toString())
+            etv_nombre_poke_mod.setText(pokemon?.nombre)
+            etv_tipo_poke_mod.setText(pokemon?.tipo)
+            et_nivel_pokemon_ed.setText(pokemon?.nivel)
+            et_activo_poke_edi.setText(pokemon?.activo)
+            etv_entrenador_due.setText(pokemon?.entrenador)
+         //   etv_entrenador_due.setText(pokemon?.)
 
-            //   iv_chord.setImageResource(acorde_encontrado.imagen)
+        }
 
-        }else{
+
+     else{
             Toast.makeText(applicationContext,"No se encuentra pokemon", Toast.LENGTH_SHORT).show()
         }
         btn_modificar_pokemon.setOnClickListener {
-            BddService.modificar_pokemon(posicion, Pokemon (
+            BddService.modificarPokemon(posicion,
                 etv_nombre_poke_mod.text.toString(),
                 etv_tipo_poke_mod.text.toString(),
-                et_nivel_pokemon_ed.text.toString()
-            ))
+                et_nivel_pokemon_ed.text.toString(),
+                et_activo_poke_edi.text.toString(),
+
+              //tv_nombre.text.toString()
+                etv_entrenador_due.text.toString()
+            )
             Toast.makeText(applicationContext,"POKEMON Modificada con Exito",Toast.LENGTH_SHORT).show()
-            ir_list_pokemones()
+            ir_activity_pokemones()
         }
         btn_eliminar_pokemon.setOnClickListener {
-          
+          BddService.deletePokemon(posicion)
+            val intentExplicito= Intent(this, ListaPokemones::class.java)
+            this.startActivity(intentExplicito)
+
             Toast.makeText(applicationContext,"POKEMON eliminado con Exito",Toast.LENGTH_SHORT).show()
-            ir_list_pokemones()
         }
 
 

@@ -13,7 +13,8 @@ class ListaPokemones : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_pokemones)
-        val lista_pokemones= BddService.listaPokemones
+        val lista_pokemones= BddService.listaAcordes
+
 
 
         val adaptador= ArrayAdapter(
@@ -25,25 +26,33 @@ class ListaPokemones : AppCompatActivity() {
 
         lv_lista_pokemones.onItemClickListener= AdapterView.OnItemClickListener{
                 parent,view,position,id ->
-            Log.i("list-view","Posicion ${lista_pokemones[position]}")
-           // irEntrenador(position);
+            Log.i("ENVIOOOOO","Posicion: ${lista_pokemones[position].nombre} y nombre: ${lista_pokemones[position].nombre}")
+         //   irEntrenador(lista_pokemones[position].id);
+            irModificar(lista_pokemones[position].id)
         }
 
         btn_ir_entrena.setOnClickListener {
-            irEntrenador()
+            this.startActivity(Intent(this,MainActivity::class.java))
         }
 
 
-
-
-
-
     }
-    fun irEntrenador(){
-        val intentExplicito= Intent(this, EntrenadorActivity::class.java)
-      //  intentExplicito.putExtra("index",posicion)
+    init {
+        BddService.getAcordes()
+    }
+
+
+    fun irEntrenador( posicion:Int){
+        val intentExplicito= Intent(this, ModificarPokemonActivity::class.java)
+        intentExplicito.putExtra("posicion_pokemon",posicion)
         this.startActivity(intentExplicito)
     }
+    fun irModificar( posicion: Int){
+        val intentExplicito= Intent(this, ModificarPokemonActivity::class.java)
+       intentExplicito.putExtra("posicion_pokemon",posicion)
+       // intentExplicito.putExtra("nombre_pokemon",nombre)
 
+        this.startActivity(intentExplicito)
+    }
 
 }

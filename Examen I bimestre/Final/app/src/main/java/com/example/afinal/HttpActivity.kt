@@ -1,19 +1,21 @@
 package com.example.afinal
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.httpPost
-import com.github.kittinunf.fuel.httpPut
 import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_http.*
 
 class HttpActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.1.15:1337"
+    val urlPrincipal = "http://192.168.1.14:1337"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_http)
         btn_obtener
@@ -97,18 +99,34 @@ class HttpActivity : AppCompatActivity() {
             is Result.Success ->{
                 val data= result.get()
                 Log.i("http-klaxon", "data: ${data}")
+                val intentExplicito= Intent(this, RecyclerViewActivity::class.java)
 
                 val entrenadores = Klaxon().parseArray<EntrenadorHttp>(data)
+
                 if(entrenadores!=null){
+
+                    intentExplicito.putExtra("tamano",entrenadores.size)
+
+
                     entrenadores.forEach{
                         Log.i("http-klaxon", "ENTRENADOR nombre : ${it.nombre} "+ "COLOR: ${it.color}" )
-                    if (it.pokemons.size>0){
+                        var listaNombre : ArrayList<EntrenadorHttp>
+
+                        intentExplicito.putExtra("nombre",it.nombre)
+                        intentExplicito.putExtra("color",it.color)
+                        intentExplicito.putExtra("id",it.id)
+                        this.startActivity(intentExplicito)
+                      //  Log.i("Taza", "HTTP ENVIA  : ${entrenadores} " )
+
+                        if (it.pokemons.size>0){
+
                         it.pokemons.forEach {
                             Log.i("http-klaxon", "POKEMON  : ${it.nombre} " )
-
                         }
 
                     }
+
+
                     }
                 }
 

@@ -16,20 +16,24 @@ class AgregarEntrenadorActivity : AppCompatActivity() {
             //Me enviaron para modificar
             tv_agregar_modificar_c.text="Modificar Entrenador"
             btn_agregar_modificar.setText("MODIFICAR")
-            var entrenador:Entrenador= BddService.obtener_entrenador(posicion)
-            et_nombre.setText(entrenador.nombre)
-            et_color_entrenador.setText(entrenador.color)
-            et_nivel.setText(entrenador.nivel.toString())
-            et_entre_activo.setText(entrenador.activo.toString())
-            et_pokemones.setText(entrenador.listaPokemones)
+            var entrenador: Entrenador? = BddService.obtenerCancion(posicion)
+            if (entrenador != null) {
+
+                et_nombre.setText(entrenador.nombre)
+                et_color_entrenador.setText(entrenador.color)
+                et_nivel.setText(entrenador.nivel.toString())
+                et_entre_activo.setText(entrenador .activo.toString())
+                et_pokemones.setText(entrenador.pokemones)
+
+            }
             btn_agregar_modificar.setOnClickListener {
-                BddService.modificar_entrenador(posicion, Entrenador(
+                BddService.modificarCancion(posicion,
                     et_nombre.text.toString(),
                     et_color_entrenador.text.toString(),
-                    et_nivel.text.toString().toInt(),
-                    et_entre_activo.text.toString().toBoolean(),
+                   et_nivel.text.toString(),
+                   et_entre_activo.text.toString(),
                     et_pokemones.text.toString()
-                ))
+                )
                 Toast.makeText(applicationContext,"Entrenador Modificada con Exito",Toast.LENGTH_SHORT).show()
                 ir_entrenador(posicion)
             }
@@ -39,13 +43,13 @@ class AgregarEntrenadorActivity : AppCompatActivity() {
             btn_agregar_modificar.setText("AGREGAR")
             //Me enviaron para agregar
             btn_agregar_modificar.setOnClickListener {
-                BddService.agregar_entrenador(Entrenador(
+                BddService.agregarCancion(
                     et_nombre.text.toString(),
                     et_color_entrenador.text.toString(),
-                    et_nivel.text.toString().toInt(),
-                    et_entre_activo.text.toString().toBoolean(),
+                    et_nivel.text.toString(),
+                    et_entre_activo.text.toString(),
                     et_pokemones.text.toString()
-                ))
+                )
                 Toast.makeText(applicationContext,"Entrenador Agregado con Exito",Toast.LENGTH_SHORT).show()
                 ir_lista_entrenadores()
             }

@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="http-klaxon" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ENVIOOOOO" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -17,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_30_x86" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -34,8 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -50,8 +50,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-24T02:53:22.543Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_27" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-29T21:24:50.137Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -59,6 +59,9 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.92082873">
+      <recent name="com.example.afinal" />
+    </key>
+    <key name="android.template.787428574">
       <recent name="com.example.afinal" />
     </key>
     <key name="android.template.-6823832">
@@ -139,6 +142,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" width="814" height="728" key="#Intentions" timestamp="1601340919897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" width="814" height="728" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1601340919897" />
     <state x="560" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600972689846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -155,26 +162,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600974832303" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600971358258">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601417494352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600971358258" />
-    <state width="1491" height="-7" key="GridCell.Tab.0.bottom" timestamp="1600968203012">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601417494352" />
+    <state width="1491" height="151" key="GridCell.Tab.0.bottom" timestamp="1601436995421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-7" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600968203012" />
-    <state width="1491" height="-7" key="GridCell.Tab.0.center" timestamp="1600968203011">
+    <state width="1491" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601436995421" />
+    <state width="1491" height="151" key="GridCell.Tab.0.center" timestamp="1601436995421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-7" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600968203011" />
-    <state width="1491" height="-7" key="GridCell.Tab.0.left" timestamp="1600968203011">
+    <state width="1491" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601436995421" />
+    <state width="1491" height="151" key="GridCell.Tab.0.left" timestamp="1601436995421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-7" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600968203011" />
-    <state width="1491" height="-7" key="GridCell.Tab.0.right" timestamp="1600968203011">
+    <state width="1491" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601436995421" />
+    <state width="1491" height="151" key="GridCell.Tab.0.right" timestamp="1601436995421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-7" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600968203011" />
+    <state width="1491" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601436995421" />
     <state x="100" y="100" width="1336" height="624" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1600696209366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -183,9 +190,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="273" y="10" width="1193" height="577" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1596413883570" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600975895907">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1601429593438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600975895907" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601429593438" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601323306646">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601323306646" />
   </component>
 </project>

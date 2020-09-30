@@ -13,19 +13,21 @@ class PokemonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pokemon)
+        BddService.getAcordes()
         val posicion= intent.getIntExtra("index",-1)
 
         if(posicion>-1){
-            var entrenador : Entrenador= BddService.obtener_entrenador(posicion)
-            tv_cancion_y_autor.setText("Entrenador: ${entrenador.nombre} -Color: ${entrenador.color}")
-            val chords=entrenador.listaPokemones.toString().split(",").toTypedArray()
+            var entrenador : Entrenador? = BddService.obtenerCancion(posicion)
+            tv_cancion_y_autor.setText("Entrenador: ${entrenador?.nombre} -Color: ${entrenador?.color}")
+            val chords=entrenador!!.pokemones.split(",").toTypedArray()
+
             val adaptador= ArrayAdapter(this,android.R.layout.simple_list_item_1,chords)
             lv_acordes.adapter=adaptador
 
             lv_acordes.onItemClickListener= AdapterView.OnItemClickListener{
                     parent,view,position,id ->
                 Log.i("list-view","Posicion pokemon ${chords[position]}")
-                val pokemon_encontrado=BddService.obtener_pokemon(position)
+                val pokemon_encontrado=BddService.buscarAcorde(chords[position])
                 Log.i("list-view","POKEMON ENCONTRADO ${pokemon_encontrado}")
                 if(pokemon_encontrado!=null){
                     Log.i("pokemon-econtrado","$pokemon_encontrado")

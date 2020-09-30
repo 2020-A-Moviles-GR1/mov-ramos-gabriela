@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 class RecyclerAdapterEntrenadores(
-    private val listaEntrenador: List<EntrenadorHttp>,
+    private val listaEntrenador: List<Entrenador>,
      private val contexto: RecyclerViewActivity,
     private val recyclerView: androidx.recyclerview.widget.RecyclerView
 ): androidx.recyclerview
