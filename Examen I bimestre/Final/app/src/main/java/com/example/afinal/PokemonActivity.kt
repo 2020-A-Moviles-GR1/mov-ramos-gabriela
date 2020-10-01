@@ -13,11 +13,11 @@ class PokemonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pokemon)
-        BddService.getAcordes()
+        BddService.getPokemones()
         val posicion= intent.getIntExtra("index",-1)
 
         if(posicion>-1){
-            var entrenador : Entrenador? = BddService.obtenerCancion(posicion)
+            var entrenador : Entrenador? = BddService.obtenerEntrenador(posicion)
             tv_cancion_y_autor.setText("Entrenador: ${entrenador?.nombre} -Color: ${entrenador?.color}")
             val chords=entrenador!!.pokemones.split(",").toTypedArray()
 
@@ -27,7 +27,7 @@ class PokemonActivity : AppCompatActivity() {
             lv_acordes.onItemClickListener= AdapterView.OnItemClickListener{
                     parent,view,position,id ->
                 Log.i("list-view","Posicion pokemon ${chords[position]}")
-                val pokemon_encontrado=BddService.buscarAcorde(chords[position])
+                val pokemon_encontrado=BddService.buscarPokemon(chords[position])
                 Log.i("list-view","POKEMON ENCONTRADO ${pokemon_encontrado}")
                 if(pokemon_encontrado!=null){
                     Log.i("pokemon-econtrado","$pokemon_encontrado")
@@ -54,6 +54,7 @@ class PokemonActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext,"No se encuentra pokemon", Toast.LENGTH_SHORT).show()
                 }
             }
+
         }else{
             this.startActivity(Intent(this,MainActivity::class.java))
         }
@@ -68,5 +69,9 @@ class PokemonActivity : AppCompatActivity() {
 
 
 
+
+
     }
+
+
 }

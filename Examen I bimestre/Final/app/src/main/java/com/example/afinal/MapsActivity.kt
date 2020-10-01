@@ -2,12 +2,14 @@ package com.example.afinal
 
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
+
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.StrictMode
+import android.os.Handler
+import android.os.Looper
+
+import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
@@ -16,115 +18,117 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
-import java.net.URL
+import com.squareup.picasso.Picasso
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback , GoogleMap.OnInfoWindowClickListener {
+class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnInfoWindowClickListener {
 
     private lateinit var mMap: GoogleMap
-    var search="/results?search_query="
-    var tienePermisos=false
-    var acordes_cancion=ArrayList<Pokemons>()
+    var tienePermisos = false
+    var listas = BddService.listaPokemones
+    var indice:Int =1
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
-        BddService.getAcordes()
+     //   BddService.getAcordes()
+
         solicitarPermisos()
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-
     }
-    override fun onStart() {
-        super.onStart()
-        val policy =
-            StrictMode.ThreadPolicy.Builder().permitAll().build()
-        StrictMode.setThreadPolicy(policy)
-        var acordes_extra= intent.getStringExtra("acordes")
-        var query= intent.getStringExtra("nombre-autor")
-        if(query!=null){
-            this.search=this.search+query
-        }
-        if(acordes_extra!=null){
-            val chords=acordes_extra.split(",").toTypedArray()
-            for(chord in chords){
-                val acorde_encontrado=BddService.buscarAcorde(chord)
-                if(acorde_encontrado!=null){
 
-                    this.acordes_cancion.add(acorde_encontrado)
-                }
-            }
-        }
 
-    }
+
+
+    /**
+     * Manipulates the map once available.
+     * This callback is triggered when the map is ready to be used.
+     * This is where we can add markers or lines, add listeners or move the camera. In this case,
+     * we just add a marker near Sydney, Australia.
+     * If Google Play services is not installed on the device, the user will be prompted to install
+     * it inside the SupportMapFragment. This method will only be triggered once the user has
+     * installed Google Play services and returned to the app.
+     */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-        val zoom=17f
         establecerConfiguracionMapa(mMap)
-        mMap.setOnInfoWindowClickListener(this)
 
-/*
-        for (acorde in this.acordes_cancion){
-            // Log.i("OnMap",acorde.img_url)
-            var bit=getBitmap("https://"+acorde.img_url)
-            if(bit!=null){
-                agregarMarcador(
-                    LatLng(acorde.latitud,acorde.longitud),
-                    acorde.nombre.capitalize(),
-                    "https://www."+acorde.url_redireccion+search,
-                    "https://"+acorde.img_url
+            listas.forEach {
 
-                )
-                moverCamaraZoom(LatLng(acorde.latitud,acorde.longitud),zoom)
+                agregarPokemonesMapa(it.latitud,it.longitud,it.nombre,it.url,it.imagen)
+                Log.i("mapaFor","url: ${it.url}")
+                Log.i("mapaFor","url: ${it.url}")
 
             }
-        }*/
+
+
+
+
+
+
 
     }
 
-    fun agregarMarcador(latLng: LatLng,titulo:String,url_redirect:String,urlImg:String){
-        // Log.i("MapsActivity",urlImg)
-
+    fun anadirMarcador(latLng: LatLng, title: String) {
         mMap.addMarker(
-            MarkerOptions().position(latLng).title(titulo).snippet(url_redirect).icon(getBitmap(urlImg))
+            MarkerOptions()
+                .position(latLng)
+               // .title(title)
+                //.snippet(url_redirect)
+                .title(title)
 
         )
+
     }
-    fun moverCamaraZoom(latLng: LatLng,zoom:Float=10f){
+    fun moverCamaraConZoom(latLng: LatLng, zoom: Float = 10f) {
         mMap.moveCamera(
-            CameraUpdateFactory.newLatLngZoom(latLng,zoom)
+            CameraUpdateFactory
+                .newLatLngZoom(latLng, zoom)
         )
-
-    }
-    fun getBitmap(url:String): BitmapDescriptor {
-        var bmp = BitmapFactory.decodeStream(URL(url).openConnection().getInputStream())
-        bmp = Bitmap.createScaledBitmap(bmp, 100, 100, false)
-        return BitmapDescriptorFactory.fromBitmap(bmp)
     }
 
-    fun solicitarPermisos(){
-        val permisos= ContextCompat.checkSelfPermission(this.applicationContext,android.Manifest.permission.ACCESS_FINE_LOCATION)
-        val estaPermitido=permisos== PackageManager.PERMISSION_GRANTED
-        if(estaPermitido){
-            this.tienePermisos=true
-        }else{
-            ActivityCompat.requestPermissions(
-                this, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),1)
-
-        }
-    }
-
-    fun establecerConfiguracionMapa(mapa:GoogleMap){
-        val contexto=this.applicationContext
-        with(mapa){
-            val permisos=ContextCompat.checkSelfPermission(contexto,android.Manifest.permission.ACCESS_FINE_LOCATION)
-            val estaPermitido=permisos==PackageManager.PERMISSION_GRANTED
-            if(estaPermitido){
-                mapa.isMyLocationEnabled=true;
+    fun establecerConfiguracionMapa(mapa: GoogleMap) {
+        val contexto = this.applicationContext
+        with(mapa) {
+            val permisosFineLocation = ContextCompat
+                .checkSelfPermission(
+                    contexto,
+                    android.Manifest.permission.ACCESS_FINE_LOCATION
+                )
+            val tienePermisos = permisosFineLocation == PackageManager.PERMISSION_GRANTED
+            if (tienePermisos) {
+                mapa.isMyLocationEnabled = true
             }
-            uiSettings.isZoomControlsEnabled=true
-            uiSettings.isMyLocationButtonEnabled=true
+            // this.uiSettings.isZoomControlsEnabled = true
+            uiSettings.isZoomControlsEnabled = true
+            uiSettings.isMyLocationButtonEnabled = true
         }
 
+    }
+
+    fun solicitarPermisos() {
+        val permisosFineLocation = ContextCompat
+            .checkSelfPermission(
+                this.applicationContext,
+                android.Manifest.permission.ACCESS_FINE_LOCATION
+            )
+        val tienePermisos = permisosFineLocation == PackageManager.PERMISSION_GRANTED
+
+        if (tienePermisos) {
+            Log.i("mapa", "Tiene permisos FINE LOCATION")
+            this.tienePermisos = true
+        } else {
+            ActivityCompat.requestPermissions(
+                this, // Contexto
+                arrayOf( // Arreglo Permisos
+                    android.Manifest.permission.ACCESS_FINE_LOCATION
+                ),
+                1 //  Codigo que esperamos
+            )
+        }
     }
 
 
@@ -134,5 +138,39 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback , GoogleMap.OnInfoW
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(p0?.snippet)) //p0?.snippet
         startActivity(browserIntent)
     }
+
+
+    fun agregarPokemonesMapa(
+        lat:String, lon:String, titulo: String, urlsalgo:String, imagen:String
+    ){
+
+
+            val puntoUsuario = LatLng(lat.toDouble(), lon.toDouble())
+
+            val melbourne = mMap.addMarker(
+                MarkerOptions()
+                    .position(puntoUsuario)
+                    .title(titulo))
+
+            val marker = PicassoMarker(melbourne);
+            Picasso.get().load(imagen).resize(150, 150).into(marker);
+
+
+
+
+            mMap.setOnMarkerClickListener(GoogleMap.OnMarkerClickListener { melbourne ->
+                val uri: Uri =
+                    Uri.parse("${urlsalgo}")
+                Log.i("mapaFor", "url salgo: ${urlsalgo}")
+
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+                true
+            })
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(puntoUsuario, 18F))
+    }
+
 
 }

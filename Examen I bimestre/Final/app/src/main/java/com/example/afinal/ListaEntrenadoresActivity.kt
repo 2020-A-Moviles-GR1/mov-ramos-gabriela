@@ -14,7 +14,7 @@ class ListaEntrenadoresActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lista_entrenadores)
 
 
-        val listaEntrenadores= BddService.listaCanciones
+        val listaEntrenadores= BddService.listaEntrenadores
         Log.i("Lista-Http","${listaEntrenadores}")
 
 
@@ -42,7 +42,7 @@ class ListaEntrenadoresActivity : AppCompatActivity() {
 
     }
     init {
-        BddService.getCanciones()
+        BddService.getEntrenadores()
     }
     fun irEntrenador(posicion:Int){
         val intentExplicito= Intent(this, EntrenadorActivity::class.java)

@@ -14,27 +14,27 @@ class EntrenadorActivity : AppCompatActivity() {
         val posicion= intent.getIntExtra("index",-1)
 
         if(posicion>-1){
-            var cancion: Entrenador? = BddService.obtenerCancion(posicion)
+            var entrenador: Entrenador? = BddService.obtenerEntrenador(posicion)
             Log.i("ID-http","${posicion}")
-            if (cancion != null) {
-                tv_nombre.text=cancion.nombre
-                tv_color.text=cancion.color;
-                tv_nivel.text= cancion.nivel.toString();
-                tv_activo_entre.text=cancion.activo.toString();
-                tv_pokemones.text=cancion.pokemones
+            if (entrenador != null) {
+                tv_nombre.text=entrenador.nombre
+                tv_color.text=entrenador.color;
+                tv_nivel.text= entrenador.nivel.toString();
+                tv_activo_entre.text=entrenador.activo.toString();
+                tv_pokemones.text=entrenador.pokemones
             };
 
             btn_eliminar.setOnClickListener {
-            //    BddService.eliminar_entrendor(entrenador)
+               BddService.elimarEntrenador(entrenador!!.id)
                 Toast.makeText(applicationContext,"Entrenador Eliminado", Toast.LENGTH_SHORT).show()
                 ir_lista_entrenadores()
             }
             btn_modificar.setOnClickListener {
-                var pokemones: Entrenador? = BddService.obtenerCancion(posicion)
+                var pokemones: Entrenador? = BddService.obtenerEntrenador(posicion)
 
                 ir_agregar_entrenador(posicion);
             }
-            btn_a_acordeslist.setOnClickListener {
+            btn_pokemones.setOnClickListener {
                 ir_pokemon_entrenador(posicion)
             }
 
@@ -44,7 +44,7 @@ class EntrenadorActivity : AppCompatActivity() {
        // btn_cancion_a_lista.setOnClickListener {
            // ir_lista_entrenadores()
        // }
-        btn_cancion_a_main.setOnClickListener {
+        btn_entre_a_main.setOnClickListener {
             this.startActivity(Intent(this,MainActivity::class.java))
         }
 

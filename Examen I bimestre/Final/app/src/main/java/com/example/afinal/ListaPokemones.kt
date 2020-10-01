@@ -6,39 +6,43 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import kotlinx.android.synthetic.main.activity_lista_entrenadores.*
 import kotlinx.android.synthetic.main.activity_lista_pokemones.*
 
 class ListaPokemones : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_pokemones)
-        val lista_pokemones= BddService.listaAcordes
+        val lista_pokemones = BddService.listaPokemones
 
 
-
-        val adaptador= ArrayAdapter(
+        val adaptador = ArrayAdapter(
             this,
             android.R.layout.simple_list_item_1,
-            lista_pokemones)
+            lista_pokemones
+        )
 
-        lv_lista_pokemones.adapter=adaptador
+        lv_lista_pokemones.adapter = adaptador
 
-        lv_lista_pokemones.onItemClickListener= AdapterView.OnItemClickListener{
-                parent,view,position,id ->
-            Log.i("ENVIOOOOO","Posicion: ${lista_pokemones[position].nombre} y nombre: ${lista_pokemones[position].nombre}")
-         //   irEntrenador(lista_pokemones[position].id);
-            irModificar(lista_pokemones[position].id)
-        }
+        lv_lista_pokemones.onItemClickListener =
+            AdapterView.OnItemClickListener { parent, view, position, id ->
+                Log.i(
+                    "ENVIOOOOO",
+                    "Posicion: ${lista_pokemones[position].nombre} y nombre: ${lista_pokemones[position].nombre}"
+                )
+                //   irEntrenador(lista_pokemones[position].id);
+                irModificar(lista_pokemones[position].id)
+            }
 
         btn_ir_entrena.setOnClickListener {
-            this.startActivity(Intent(this,MainActivity::class.java))
+            this.startActivity(Intent(this, MainActivity::class.java))
         }
 
 
     }
+
+
     init {
-        BddService.getAcordes()
+        BddService.getPokemones()
     }
 
 

@@ -25,6 +25,22 @@ module.exports = {
       type: 'string',
 
     },
+    latitud :{
+      type: 'string',
+
+    },
+    longitud:{
+      type: 'string',
+
+    },
+    url:{
+      type: 'string',
+
+    },
+    imagen:{
+      type: 'string',
+
+    },
 
 
 /*

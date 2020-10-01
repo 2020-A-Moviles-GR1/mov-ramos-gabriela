@@ -1,44 +1,36 @@
 package com.example.afinal
 
-import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
-import com.beust.klaxon.Converter
-import com.beust.klaxon.JsonValue
 import com.beust.klaxon.Klaxon
-import com.beust.klaxon.KlaxonException
 import com.github.kittinunf.fuel.httpDelete
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.httpPost
 import com.github.kittinunf.fuel.httpPut
 import com.github.kittinunf.result.Result
-import java.time.Instant
-import java.time.LocalDate
-import java.time.ZoneId
 
 class BddService {
     companion object{
-        val urlPrincipal="http://192.168.1.14:1337"
+        val urlPrincipal="http://192.168.1.9:1337"
 
-        var listaCanciones= listOf<Entrenador>()
-        var cancion: Entrenador? =null
+        var listaEntrenadores= listOf<Entrenador>()
+        var entrenador: Entrenador? =null
         var pokemon: Pokemons? =null
 
-        var listaAcordes= listOf<Pokemons>()
-        fun buscarAcorde(chord:String): Pokemons? {
-            var ac=chord.toLowerCase()
+        var listaPokemones= listOf<Pokemons>()
+        fun buscarPokemon(chord:String): Pokemons? {
+            var poke=chord.toLowerCase()
 
-            var acordeEncontrado=listaAcordes.find{
+            var pokemonEncontrado=listaPokemones.find{
 
-                    acorde -> acorde.nombre.equals(ac)
+                    pokemons -> pokemons.nombre.equals(poke)
 
             }
 
 
 
-            return acordeEncontrado
+            return pokemonEncontrado
         }
-        fun getCanciones() {
+        fun getEntrenadores() {
 
             val url= "$urlPrincipal/entrenador"
             url.httpGet().responseString{
@@ -46,12 +38,10 @@ class BddService {
                 when(result){
                     is Result.Success->{
                         val data=result.get()
-                        Log.i("Http data cancion","Data cancion: $data")
-                        val canciones=Klaxon().parseArray<Entrenador>(data)
-                        if(canciones!=null){
-                            this.listaCanciones=canciones
-                            canciones.forEach {
-                                Log.i("Http-Klaxon-canciones","Nombre ${it.nombre} , : ${it.color}")
+                        val entrenadores=Klaxon().parseArray<Entrenador>(data)
+                        if(entrenadores!=null){
+                            this.listaEntrenadores=entrenadores
+                            entrenadores.forEach {
                             }
 
                         }
@@ -59,15 +49,14 @@ class BddService {
                     }
                     is Result.Failure->{
                         val ex=result.getException()
-                        Log.i("Http Exception","Error obteniendo canciones: $ex.message")
+                        Log.i("Http Exception","Error  entrenadores: $ex.message")
 
                     }
                 }
             }.join()
         }
-        fun getAcorde(id: Int){
+        fun getPokemon(id: Int){
             val url= "$urlPrincipal/pokemon/${id}"
-            Log.i("ENVIOOOOO","consutlo: ${url}")
             url.httpGet().responseString{
                     request, response, result ->
                 when(result){
@@ -78,7 +67,6 @@ class BddService {
                         if(pokemon!=null){
 
                             this.pokemon=pokemon
-                                //Log.i("Http-Klaxon-acordes","Nombre ${it.nombre} , : ${it.tipo}")
 
 
                         }
@@ -86,13 +74,13 @@ class BddService {
                     }
                     is Result.Failure->{
                         val ex=result.getException()
-                        Log.i("Http Exception","Error obteniendo canciones: $ex.message")
+                        Log.i("Http Exception","Error  pokemones: $ex.message")
 
                     }
                 }
             }.join()
         }
-        fun getAcordes(){
+        fun getPokemones(){
             val url= "$urlPrincipal/pokemon"
             url.httpGet().responseString{
                     request, response, result ->
@@ -100,11 +88,10 @@ class BddService {
                     is Result.Success->{
                         val data=result.get()
                         Log.i("Http data Acorde","Data acorde: $data")
-                        val acordes=Klaxon().parseArray<Pokemons>(data)
-                        if(acordes!=null){
-                            this.listaAcordes=acordes
-                            acordes.forEach {
-                                Log.i("Http-Klaxon-acordes","Nombre ${it.nombre} , : ${it.tipo}")
+                        val pokemones=Klaxon().parseArray<Pokemons>(data)
+                        if(pokemones!=null){
+                            this.listaPokemones=pokemones
+                            pokemones.forEach {
                             }
 
                         }
@@ -112,7 +99,7 @@ class BddService {
                     }
                     is Result.Failure->{
                         val ex=result.getException()
-                        Log.i("Http Exception","Error obteniendo canciones: $ex.message")
+                        Log.i("Http Exception","Error  entrena: $ex.message")
 
                     }
                 }
@@ -126,12 +113,10 @@ class BddService {
                 when(result){
                     is Result.Success->{
                         val data=result.get()
-                        Log.i("Http data Acorde","Data acorde: $data")
-                        val acordes=Klaxon().parseArray<Pokemons>(data)
-                        if(acordes!=null){
-                            this.listaAcordes=acordes
-                            acordes.forEach {
-                                Log.i("Http-Klaxon-acordes","Nombre ${it.nombre} , : ${it.tipo}")
+                        val pokemones=Klaxon().parseArray<Pokemons>(data)
+                        if(pokemones!=null){
+                            this.listaPokemones=pokemones
+                            pokemones.forEach {
                             }
 
                         }
@@ -152,9 +137,9 @@ class BddService {
                 when(result){
                     is Result.Success->{
                         val data=result.get()
-                        val cancion=Klaxon().parse<Pokemons>(data)
-                        if(cancion!=null){
-                           var id = cancion.id
+                        val pokemons=Klaxon().parse<Pokemons>(data)
+                        if(pokemons!=null){
+                           var id = pokemons.id
                         }
                     }
                     is Result.Failure->{
@@ -166,7 +151,7 @@ class BddService {
             }.join()
 
         }
-        fun getCancion(id:Int) {
+        fun getEntrenador(id:Int) {
 
             val url= "$urlPrincipal/entrenador/${id}"
             url.httpGet().responseString{
@@ -175,10 +160,11 @@ class BddService {
                     is Result.Success->{
                         val data=result.get()
                         Log.i("Http data cancion","Data cancion: $data")
-                        val cancion=Klaxon().parse<Entrenador>(data)
-                        if(cancion!=null){
-                            this.cancion=cancion
-                            Log.i("Http-Klaxon-canciones","Nombre ${cancion.nombre} , : ${cancion.color}")
+                        val entrenador=Klaxon().parse<Entrenador>(data)
+                        if(entrenador!=null){
+                            this.entrenador=entrenador
+                            Log.i("Http-Klaxon","Nombre ${entrenador.nombre} , color : ${entrenador.color}")
+
 
 
                         }
@@ -186,31 +172,59 @@ class BddService {
                     }
                     is Result.Failure->{
                         val ex=result.getException()
-                        Log.i("Http Exception","Error obteniendo cancion: $ex.message")
+                        Log.i("Http Exception","Error  : $ex.message")
 
                     }
                 }
             }.join()
         }
-        fun postCancion(nombre:String,color:String,nivel:String,activo:String,pokemones:String){
-            val url= "$urlPrincipal/entrenador"
+
+
+        fun postPokemon(nombre:String,tipo:String,nivel:String,activo:String,entrenadornuevo:String,latitud:String,longitud:String,url:String, imagen:String){
+            val url= "$urlPrincipal/pokemon"
             val parametrosUsuario=listOf(
                 "nombre" to nombre,
-                "color" to color,
+                "tipo" to tipo,
                 "nivel" to nivel,
                 "activo" to activo,
-                "pokemones" to pokemones
+                "entrenador" to entrenadornuevo,
+                "latitud" to latitud,
+                 "longitud" to longitud,
+                 "url" to  url,
+                 "imagen" to  imagen
             )
             url.httpPost(parametrosUsuario).responseString{
                     req,res,result->
                 when(result){
                     is Result.Failure->{
                         val error= result.getException()
-                        Log.i("http-klaxon-post-cancion","Error:${error}")
                     }
                     is Result.Success->{
                         val cancionString=result.get()
-                        Log.i("Http-klaxon","Agregado ${cancionString}")
+                    }
+                }
+            }.join()
+
+        }
+
+
+        fun postEntrenador(nombre:String, color:String, nivel:String, activo:String, pokemones:String){
+            val url= "$urlPrincipal/entrenador"
+            val parametrosEntrenador=listOf(
+                "nombre" to nombre,
+                "color" to color,
+                "nivel" to nivel,
+                "activo" to activo,
+                "pokemones" to pokemones
+            )
+            url.httpPost(parametrosEntrenador).responseString{
+                    req,res,result->
+                when(result){
+                    is Result.Failure->{
+                        val error= result.getException()
+                    }
+                    is Result.Success->{
+                        val cancionString=result.get()
                     }
                 }
             }.join()
@@ -224,16 +238,14 @@ class BddService {
                 when(result){
                     is Result.Failure->{
                         val error= result.getException()
-                        Log.i("http-klaxon-delete-cancion","Error:${error}")
                     }
                     is Result.Success->{
                         val cancionString=result.get()
-                        Log.i("Http-klaxon","eliminado ${cancionString}")
                     }
                 }
             }.join()
         }
-        fun deleteCancion(id:Int){
+        fun deleteEntrenador(id:Int){
             val url= "$urlPrincipal/entrenador/${id}"
 
             url.httpDelete().responseString{
@@ -241,17 +253,15 @@ class BddService {
                 when(result){
                     is Result.Failure->{
                         val error= result.getException()
-                        Log.i("http-klaxon-delete-cancion","Error:${error}")
                     }
                     is Result.Success->{
                         val cancionString=result.get()
-                        Log.i("Http-klaxon","eliminado ${cancionString}")
                     }
                 }
             }.join()
         }
 
-        fun putCancion(id:Int,nombre:String,color:String,nivel:String,activo:String,pokemones:String){
+        fun putEntrenador(id:Int, nombre:String, color:String, nivel:String, activo:String, pokemones:String){
             val url= "$urlPrincipal/entrenador/${id}"
             val parametrosUsuario=listOf(
                 "nombre" to nombre,
@@ -265,7 +275,6 @@ class BddService {
                 when(result){
                     is Result.Failure->{
                         val error= result.getException()
-                        Log.i("http-klaxon-put-cancion","Error:${error}")
                     }
                     is Result.Success->{
                         val cancionString=result.get()
@@ -275,7 +284,7 @@ class BddService {
             }.join()
         }
 
-        fun putPokemon(id:Int,nombre:String,tipo:String,nivel:String,activo:String,entrenador:String){
+        fun putPokemon(id:Int,nombre:String,nivel:String,tipo:String,activo:String,entrenador:String,latitud: String,longitud: String,urlnueva: String,imagen: String){
 
             val url= "$urlPrincipal/pokemon/${id}"
             Log.i("Http-klaxonPOKEMON","ENVIO ${url}")
@@ -284,8 +293,14 @@ class BddService {
                 "id" to id,
                 "nombre" to nombre,
                 "nivel" to nivel,
+
+                "tipo" to tipo,
                 "activo" to activo,
-                "entrenador" to entrenador
+                "entrenador" to entrenador,
+                "latitud" to latitud,
+                "longitud" to longitud,
+                "url" to urlnueva,
+                "imagen" to imagen
 
 
             )
@@ -304,13 +319,13 @@ class BddService {
             }.join()
         }
 
-        fun agregarCancion(nombre:String,color:String,nivel:String,activo:String,acordes:String){
-            postCancion(nombre,color,nivel,activo,acordes)
-            getCanciones()
+        fun agregarEntrenador(nombre:String, color:String, nivel:String, activo:String, acordes:String){
+            postEntrenador(nombre,color,nivel,activo,acordes)
+            getEntrenadores()
         }
-        fun elimarCancion(id:Int){
-            deleteCancion(id)
-            getCanciones()
+        fun elimarEntrenador(id:Int){
+            deleteEntrenador(id)
+            getEntrenadores()
             //listaCanciones.remove(cancion)
 
 
@@ -318,40 +333,43 @@ class BddService {
 
         fun elimarPokemon(id:Int){
             deletePokemon(id)
-            getAcordes()
+            getPokemones()
             //listaCanciones.remove(cancion)
 
 
         }
 
-        fun modificarCancion(id:Int,nombre:String,color:String,nivel:String,activo:String,acordes:String){
-            putCancion(id,nombre,color,nivel,activo,acordes)
-            getCancion(id)
+        fun modificarEntrenador(id:Int, nombre:String, color:String, nivel:String, activo:String, acordes:String){
+            putEntrenador(id,nombre,color,nivel,activo,acordes)
+            getEntrenador(id)
             //listaCanciones.set(posicion,cancion);
         }
-        fun obtenerCancion(posicion: Int): Entrenador? {
-            getCancion(posicion)
-            return cancion
+        fun obtenerEntrenador(posicion: Int): Entrenador? {
+            getEntrenador(posicion)
+            return entrenador
         }
 
         fun obtenerPokemon(posicion: Int): Pokemons? {
-            getAcorde(posicion)
+            getPokemon(posicion)
             return pokemon
         }
 
 
 
 
-
-        fun modificarPokemon(id:Int,nombre:String, tipo:String,nivel:String,activo: String,entrenador:String){
-            putPokemon(id,nombre,tipo,nivel,activo,entrenador)
-           // getAcordes()
+        fun crearPokemon(id:Int,nombre:String, tipo:String,nivel:String,activo: String,entrenador:String,latitud:String,longitud:String,url:String, imagen:String){
+            postPokemon(nombre,tipo,nivel,activo,entrenador, latitud, longitud, url, imagen)
+            getPokemones()
             //listaCanciones.set(posicion,cancion);
+        }
+
+        fun modificarPokemon(id:Int,nombre:String,nivel:String, tipo:String,activo: String,entrenador:String,latitud: String,longitud: String,url:String, imagen:String){
+            putPokemon(id,nombre,nivel,tipo,activo,entrenador,latitud,longitud,url,imagen)
+           getPokemones()
         }
         fun idPokemon(nombre:String){
             getIdPokemon(nombre)
-            getAcordes()
-            //listaCanciones.set(posicion,cancion);
+            getPokemones()
         }
     }
 }

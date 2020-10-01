@@ -16,7 +16,7 @@ class AgregarEntrenadorActivity : AppCompatActivity() {
             //Me enviaron para modificar
             tv_agregar_modificar_c.text="Modificar Entrenador"
             btn_agregar_modificar.setText("MODIFICAR")
-            var entrenador: Entrenador? = BddService.obtenerCancion(posicion)
+            var entrenador: Entrenador? = BddService.obtenerEntrenador(posicion)
             if (entrenador != null) {
 
                 et_nombre.setText(entrenador.nombre)
@@ -27,7 +27,7 @@ class AgregarEntrenadorActivity : AppCompatActivity() {
 
             }
             btn_agregar_modificar.setOnClickListener {
-                BddService.modificarCancion(posicion,
+                BddService.modificarEntrenador(posicion,
                     et_nombre.text.toString(),
                     et_color_entrenador.text.toString(),
                    et_nivel.text.toString(),
@@ -43,7 +43,7 @@ class AgregarEntrenadorActivity : AppCompatActivity() {
             btn_agregar_modificar.setText("AGREGAR")
             //Me enviaron para agregar
             btn_agregar_modificar.setOnClickListener {
-                BddService.agregarCancion(
+                BddService.agregarEntrenador(
                     et_nombre.text.toString(),
                     et_color_entrenador.text.toString(),
                     et_nivel.text.toString(),
